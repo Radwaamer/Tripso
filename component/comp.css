@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Pacifico&display=swap');
+:root{
+    --white: white;
+    --black: #131416;
+    --grey:#b2b2b2;
+    --main-color: #57c7df;
+    --back-light: #afd9e2;
+    --main-transition: 0.3s;
+}
+.white{
+    color: var(--white);
+}
+.black{
+    color: var(--black);
+}
+.grey{
+    color: var(--grey);
+}
+.main-color{
+    color: var(--main-color);
+}
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--back-light);
+    font-size: 80%;
+}
+body.active{
+    --black: white;
+    --white:#131416;
+    --grey:#b8b8b9;
+    --back-light:#1d4b55;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+}
+button{
+    background-color: transparent;
+}
+.main{
+    margin-left: 22rem;
+    margin-bottom: 1rem;
+}
+
+/* start header */
+header nav input[type="text"]{
+    background-color: var(--white);
+}
+header nav input[type="text"]::placeholder{
+    color: var(--grey);
+    font-size: 0.9rem;
+}
+header nav .profile img{
+    width: 40px;
+    height: 40px;
+}
+header nav .profile p{
+    font-size: 0.9rem;
+}
+/* end header */
+
+/* start side bar */
+aside{
+    background-color: var(--white);
+    width: 19rem;
+    position: fixed;
+    height: 100vh;
+    border-radius: 0 1.3rem 1.3rem 0;
+}
+aside h1{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
+}
+aside .items{
+    height: 90%;
+}
+aside ul li.active a,
+aside ul li:hover a,
+aside .log-out:hover a{
+    background-color: var(--main-color);
+    color: white !important;
+}
+aside ul li a,
+aside .log-out a{
+    transition: var(--main-transition);
+    border-radius: 1.3rem;
+}
+/* end side bar */

@@ -1,0 +1,22 @@
+/* start best plan */
+.best .card{
+    width: 15rem !important;
+    box-shadow: 8px 10px 15px -9px var(--grey);
+}
+.best .card .card-text{
+    font-size: 0.8rem;
+}
+.best .card button{
+    background-color: var(--main-color);
+    border-radius: 0 0 0.375rem 0.375rem;
+}
+/* end best plan */
+
+/* start popular destination*/
+.dest .image{
+    box-shadow: 8px 10px 15px -9px var(--grey);
+}
+.dest .image .layout{
+    background-color: #33333364;
+}
+/* end popular destination*/
